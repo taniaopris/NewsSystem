@@ -19,6 +19,7 @@ public class SportNewsSubscriber extends NewsObserver {
         news = newsEvent.getNewsEvent();
         news.updateViews();
         newsEventBus.post(new ViewSportNewsEvent(news));
+        System.out.println("daa5");
     }
 
 }

@@ -33,4 +33,6 @@ public class NewsObserver implements Runnable {
     public void run() {
         this.build();
     }
+
+    public News getNews() { return this.news;}
 }

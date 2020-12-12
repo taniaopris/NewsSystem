@@ -19,6 +19,7 @@ public class FinancialNewsSubscriber extends NewsObserver {
         news = newsEvent.getNewsEvent();
         news.updateViews();
         newsEventBus.post(new ViewFinancialNewsEvent(news));
+        System.out.println("daa2");
     }
 
 }

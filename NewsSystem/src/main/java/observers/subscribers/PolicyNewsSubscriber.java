@@ -19,5 +19,6 @@ public class PolicyNewsSubscriber extends NewsObserver {
         news = newsEvent.getNewsEvent();
         news.updateViews();
         newsEventBus.post(new ViewPolicyNewsEvent(news));
+        System.out.println("daa3");
     }
 }

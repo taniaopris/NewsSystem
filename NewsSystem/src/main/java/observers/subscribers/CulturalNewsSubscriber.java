@@ -19,6 +19,7 @@ public class CulturalNewsSubscriber extends NewsObserver {
         news = newsEvent.getNewsEvent();
         news.updateViews();
         newsEventBus.post(new ViewCulturalNewsEvent(news));
+        System.out.println("daa1");
     }
 
 }

@@ -10,7 +10,9 @@ public class Main {
 
         pManager.initializePublishers(mEventBus);
 
-        pManager.startPublishing();
+        pManager.startPublishing(mEventBus);
+
+
 
     }
 

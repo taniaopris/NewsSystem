@@ -19,5 +19,6 @@ public class SocialNewsSubscriber extends NewsObserver {
         news = newsEvent.getNewsEvent();
         news.updateViews();
         newsEventBus.post(new ViewSocialNewsEvent(news));
+        System.out.println("daa4");
     }
 }

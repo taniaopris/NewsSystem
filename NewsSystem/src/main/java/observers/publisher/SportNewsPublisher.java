@@ -19,8 +19,6 @@ public class SportNewsPublisher extends NewsObserver {
 
     @Subscribe
     private void subscribeTo(ViewSportNewsEvent newsEvent) {
-        try {
-            Thread.currentThread().wait(WAIT_TIME_IN_MILLIS);
             news = newsEvent.getNewsEvent();
             if (news.getNoViews() < 5) {
                 news.updateNews();
@@ -29,8 +27,5 @@ public class SportNewsPublisher extends NewsObserver {
             } else {
                 newsEventBus.post(new StopUpdateEvent());
             }
-        } catch (InterruptedException ie) {
-            ie.printStackTrace();
-        }
     }
 }
