@@ -1,5 +1,4 @@
 import com.google.common.eventbus.EventBus;
-import events.updateNewsContent.UpdateCulturalNewsEvent;
 
 public class Main {
 

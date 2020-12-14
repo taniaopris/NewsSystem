@@ -3,8 +3,7 @@ package observers.publisher;
 import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
 import events.StopUpdateEvent;
-import events.updateNewsContent.UpdateCulturalNewsEvent;
-import events.updateNewsContent.UpdateFinancialNewsEvent;
+import events.updateNewsEvent.UpdateFinancialNewsEvent;
 import events.viewNewsEvent.ViewFinancialNewsEvent;
 import observers.NewsObserver;
 import products.News;
@@ -20,7 +19,7 @@ public class FinancialNewsPublisher extends NewsObserver {
     @Subscribe
     private void subscribeTo(ViewFinancialNewsEvent newsEvent) {
             news = newsEvent.getNewsEvent();
-            if (news.getNoViews() < 5) {
+            if (news.getNoViews() < 3) {
                 news.updateNews();
                 newsEventBus.post(new UpdateFinancialNewsEvent(news));
                 System.out.println("da2");

@@ -27,4 +27,6 @@ public class News{
 
     public int getNoViews() { return noViews; }
 
+    public String getInformation() { return information; }
+
 }

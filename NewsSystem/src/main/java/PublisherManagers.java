@@ -1,11 +1,9 @@
 import com.google.common.eventbus.EventBus;
-import events.updateNewsContent.*;
+import events.updateNewsEvent.*;
 import observers.NewsObserver;
 import observers.publisher.*;
 import observers.subscribers.*;
 import products.News;
-
-import java.util.Date;
 
 public class PublisherManagers {
     private NewsObserver culturalPublisher;
@@ -48,29 +46,6 @@ public class PublisherManagers {
     }
 
     public void startPublishing(EventBus eventBus) {
-        Thread culturalPublisherJob = new Thread(culturalPublisher);
-        Thread financialPublisherJob = new Thread(financialPublisher);
-        Thread policyPublisherJob = new Thread(policyPublisher);
-        Thread socialPublisherJob = new Thread(socialPublisher);
-        Thread sportPublisherJob = new Thread(sportPublisher);
-
-        Thread culturalSubscriberJob = new Thread(culturalPublisher);
-        Thread financialSubscriberJob = new Thread(financialPublisher);
-        Thread policySubscriberJob = new Thread(policyPublisher);
-        Thread socialSubscriberJob = new Thread(socialPublisher);
-        Thread sportSubscriberJob = new Thread(sportPublisher);
-
-        culturalPublisherJob.start();
-        financialPublisherJob.start();
-        policyPublisherJob.start();
-        socialPublisherJob.start();
-        sportPublisherJob.start();
-
-        culturalSubscriberJob.start();
-        financialSubscriberJob.start();
-        policySubscriberJob.start();
-        socialSubscriberJob.start();
-        sportSubscriberJob.start();
 
         News news = culturalPublisher.getNews();
         eventBus.post(new UpdateCulturalNewsEvent(news));

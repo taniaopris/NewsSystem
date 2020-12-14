@@ -10,6 +10,7 @@ public class NewsObserver implements Runnable {
     protected EventBus newsEventBus;
     protected News news;
     private static final int STOP_TIME_IN_MILLIS = 1000;
+    private int counter = 0;
 
     public NewsObserver(EventBus eventBus, News news) {
         this.news = news;
@@ -21,11 +22,14 @@ public class NewsObserver implements Runnable {
 
     @Subscribe
     protected void stopWhenStopEventOccurs(StopUpdateEvent stopEvent) {
-        try {
-            System.out.println("Ending: " + this.getClass());
-            Thread.currentThread().join(STOP_TIME_IN_MILLIS);
-        } catch (InterruptedException ie) {
-            ie.printStackTrace();
+        counter++;
+        if(5 == counter){
+            try {
+                System.out.println("Ending: " + this.getClass());
+                Thread.currentThread().join(STOP_TIME_IN_MILLIS);
+            } catch (InterruptedException ie) {
+                ie.printStackTrace();
+            }
         }
     }
 

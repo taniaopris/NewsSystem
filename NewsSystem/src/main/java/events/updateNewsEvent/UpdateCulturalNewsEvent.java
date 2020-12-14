@@ -1,4 +1,4 @@
-package events.updateNewsContent;
+package events.updateNewsEvent;
 
 import events.NewsEvent;
 import products.News;

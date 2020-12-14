@@ -3,7 +3,7 @@ package observers.publisher;
 import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
 import events.StopUpdateEvent;
-import events.updateNewsContent.UpdateCulturalNewsEvent;
+import events.updateNewsEvent.UpdateCulturalNewsEvent;
 import events.viewNewsEvent.ViewCulturalNewsEvent;
 import observers.NewsObserver;
 import products.News;
@@ -22,7 +22,7 @@ public class CulturalNewsPublisher extends NewsObserver {
             if (news.getNoViews() < 5) {
                 news.updateNews();
                 newsEventBus.post(new UpdateCulturalNewsEvent(news));
-                System.out.println("da1");
+                System.out.println("Update no." + news.getNoViews() + " was posted!");
             } else {
                 newsEventBus.post(new StopUpdateEvent());
             }

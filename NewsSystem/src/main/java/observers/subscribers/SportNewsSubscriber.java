@@ -2,7 +2,7 @@ package observers.subscribers;
 
 import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
-import events.updateNewsContent.UpdateSportNewsEvent;
+import events.updateNewsEvent.UpdateSportNewsEvent;
 import events.viewNewsEvent.ViewSportNewsEvent;
 import observers.NewsObserver;
 import products.News;

@@ -2,7 +2,7 @@ package observers.subscribers;
 
 import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
-import events.updateNewsContent.UpdateCulturalNewsEvent;
+import events.updateNewsEvent.UpdateCulturalNewsEvent;
 import events.viewNewsEvent.ViewCulturalNewsEvent;
 import observers.NewsObserver;
 import products.News;
@@ -19,7 +19,7 @@ public class CulturalNewsSubscriber extends NewsObserver {
         news = newsEvent.getNewsEvent();
         news.updateViews();
         newsEventBus.post(new ViewCulturalNewsEvent(news));
-        System.out.println("daa1");
+        System.out.println("I've read this news" + news.getInformation());
     }
 
 }
