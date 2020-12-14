@@ -1,4 +1,6 @@
 import com.google.common.eventbus.EventBus;
+import events.NewsViewEvent;
+import events.viewNews.ViewSportNewsEvent;
 import products.News;
 import products.Publisher;
 import products.Viewer;

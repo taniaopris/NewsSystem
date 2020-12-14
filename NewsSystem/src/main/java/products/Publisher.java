@@ -17,8 +17,8 @@ public class Publisher {
 
     public News createNews(String information, News.NewsType domain) {
         News news = new News(information,this,domain);
-        publishNews(news);
         registerPublisher(domain,newsEventBus);
+        publishNews(news);
         return news;
     }
 
