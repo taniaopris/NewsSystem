@@ -1,7 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55dd6961-6d87-4320-a029-68adb8f27b19" name="Default Changelist" comment="" />
+    <list default="true" id="55dd6961-6d87-4320-a029-68adb8f27b19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/NewsSystem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/events/NewsViewEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/observers/SubscriberNewsObserver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/products/Publisher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/products/Viewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewsSystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/PublisherManagers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/NewsEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/NewsUpdateEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/StopUpdateEvent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/updateNewsContent/UpdateCulturalNewsEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/publishNews/PublishCulturalNewsEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/updateNewsContent/UpdateFinancialNewsEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/publishNews/PublishFinancialNewsEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/updateNewsContent/UpdatePolicyNewsEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/publishNews/PublishPolicyNewsEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/updateNewsContent/UpdateSocialNewsEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/publishNews/PublishSocialNewsEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/updateNewsContent/UpdateSportNewsEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/publishNews/PublishSportNewsEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/viewNewsEvent/ViewCulturalNewsEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/viewNews/ViewCulturalNewsEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/viewNewsEvent/ViewFinancialNewsEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/viewNews/ViewFinancialNewsEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/viewNewsEvent/ViewPolicyNewsEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/viewNews/ViewPolicyNewsEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/viewNewsEvent/ViewSocialNewsEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/viewNews/ViewSocialNewsEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/viewNewsEvent/ViewSportNewsEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/viewNews/ViewSportNewsEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observers/NewsObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observers/PublisherNewsObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observers/publisher/CulturalNewsPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observers/publisherObserver/CulturalNewsPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observers/publisher/FinancialNewsPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observers/publisherObserver/FinancialNewsPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observers/publisher/PolicyNewsPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observers/publisherObserver/PolicyNewsPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observers/publisher/SocialNewsPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observers/publisherObserver/SocialNewsPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observers/publisher/SportNewsPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observers/publisherObserver/SportNewsPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observers/subscribers/CulturalNewsSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observers/subscribersObserver/CulturalNewsSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observers/subscribers/FinancialNewsSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observers/subscribersObserver/FinancialNewsSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observers/subscribers/PolicyNewsSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observers/subscribersObserver/PolicyNewsSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observers/subscribers/SocialNewsSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observers/subscribersObserver/SocialNewsSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observers/subscribers/SportNewsSubscriber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observers/subscribersObserver/SportNewsSubscriber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/products/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/News.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +50,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -23,10 +61,12 @@
     </option>
   </component>
   <component name="ProjectId" id="1lWenx42YZaUsEtfUwzRF48wQMb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/ChemicalReactions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -77,27 +117,34 @@
       <workItem from="1607806640516" duration="1765000" />
       <workItem from="1607808432378" duration="1788000" />
       <workItem from="1607810248956" duration="499000" />
+      <workItem from="1607887165975" duration="3797000" />
+      <workItem from="1607973371601" duration="10239000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Main.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/observers/NewsObserver.java</url>
-          <line>18</line>
-          <properties class="observers.NewsObserver" method="build">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/main/java/observers/publisherObserver/SportNewsPublisher.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

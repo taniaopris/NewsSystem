@@ -1,18 +1,32 @@
 import com.google.common.eventbus.EventBus;
-import events.updateNewsContent.UpdateCulturalNewsEvent;
+import products.News;
+import products.Publisher;
+import products.Viewer;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Main {
 
     public static void main(String[] args) {
-        EventBus mEventBus = new EventBus("newsSystem");
+        EventBus newsEventBus = new EventBus();
+        ArrayList<News.NewsType> domains1 = new ArrayList<>(Arrays.asList(News.NewsType.Sport, News.NewsType.Cultural));
+        ArrayList<News.NewsType> domains2 = new ArrayList<>(Arrays.asList(News.NewsType.Social));
 
-        PublisherManagers pManager = new PublisherManagers();
+        Publisher toma = new Publisher(newsEventBus, "Toma");
+        Publisher anca = new Publisher(newsEventBus, "Anca");
 
-        pManager.initializePublishers(mEventBus);
+        Viewer edgar = new Viewer("Edgar", domains1, newsEventBus);
+        Viewer tania = new Viewer("Tania", domains2, newsEventBus);
 
-        pManager.startPublishing(mEventBus);
 
+        News sportNews = toma.createNews("Pandurii TG-Jiu a luat bataie... din nou.", News.NewsType.Sport);
 
+        News socialNews = anca.createNews("Let's make money.", News.NewsType.Social);
+
+        News culturalNews = anca.createNews("Culture is nice.", News.NewsType.Cultural);
+
+        toma.updateNews(sportNews,"De fapt a castigat ;)");
 
     }
 
