@@ -6,7 +6,7 @@ import events.NewsViewEvent;
 import events.publishNews.PublishCulturalNewsEvent;
 import events.viewNews.ViewCulturalNewsEvent;
 import observers.SubscriberNewsObserver;
-import products.News;
+import units.News;
 
 public class CulturalNewsSubscriber extends SubscriberNewsObserver {
 

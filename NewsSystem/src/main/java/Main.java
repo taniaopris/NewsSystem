@@ -1,9 +1,7 @@
 import com.google.common.eventbus.EventBus;
-import events.NewsViewEvent;
-import events.viewNews.ViewSportNewsEvent;
-import products.News;
-import products.Publisher;
-import products.Viewer;
+import units.News;
+import units.Publisher;
+import units.Viewer;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,6 +1,6 @@
 package events;
 
-import products.News;
+import units.News;
 
 public abstract class NewsUpdateEvent {
     private News news;

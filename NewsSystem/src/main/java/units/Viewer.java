@@ -1,4 +1,4 @@
-package products;
+package units;
 
 import com.google.common.eventbus.EventBus;
 import observers.SubscriberNewsObserver;

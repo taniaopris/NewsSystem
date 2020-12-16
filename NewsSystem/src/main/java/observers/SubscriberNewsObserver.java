@@ -1,8 +1,7 @@
 package observers;
 
 import com.google.common.eventbus.EventBus;
-import events.NewsViewEvent;
-import products.News;
+import units.News;
 
 public class SubscriberNewsObserver {
     protected EventBus newsEventBus;

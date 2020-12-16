@@ -1,7 +1,7 @@
 package events.viewNews;
 
 import events.NewsViewEvent;
-import products.News;
+import units.News;
 
 public class ViewFinancialNewsEvent extends NewsViewEvent {
 

@@ -5,7 +5,7 @@ import com.google.common.eventbus.Subscribe;
 import events.viewNews.ViewSocialNewsEvent;
 import observers.PublisherNewsObserver;
 
-import products.Publisher;
+import units.Publisher;
 
 public class SocialNewsPublisher extends PublisherNewsObserver {
 
