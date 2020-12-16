@@ -30,8 +30,8 @@ public class Main {
         News socialNews2 = ChandlerThornton.createNews("Britney Spears' father speaks out as she requests to remove him as conservator of her estate.", News.NewsType.Social);
         News financialNews = MichelleToh.createNews("China's luxury market boomed this year, even as global sales shrank.", News.NewsType.Financial);
 
-        StephenCollinson.updateNews(sportNews,"Mick Schumacher racing as Mick Junior for KSM Racing Team at the German Karting Championship on 5 October 2014, in Genk, Belgium.");
-        StephenCollinson.updateNews(sportNews,"He knows he has his name, he knows he has to manage the pressure, and he's capable of managing the pressure, says Rosin.");
+        StephenCollinson.updateNews(sportNews,"Mick Schumacher racing as Mick Junior for KSM Racing Team on 5 October 2014, in Genk, Belgium.");
+        StephenCollinson.updateNews(sportNews,"He knows he has his name and he's capable of managing the pressure, says Rosin.");
 
     }
 
