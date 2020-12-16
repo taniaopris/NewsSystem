@@ -12,23 +12,28 @@ public class Main {
 
     public static void main(String[] args) {
         EventBus newsEventBus = new EventBus();
-        ArrayList<News.NewsType> domains1 = new ArrayList<>(Arrays.asList(News.NewsType.Sport, News.NewsType.Cultural));
+        ArrayList<News.NewsType> domains1 = new ArrayList<>(Arrays.asList(News.NewsType.Sport, News.NewsType.Politics));
         ArrayList<News.NewsType> domains2 = new ArrayList<>(Arrays.asList(News.NewsType.Social));
+        ArrayList<News.NewsType> domains3 = new ArrayList<>(Arrays.asList(News.NewsType.Financial));
 
-        Publisher toma = new Publisher(newsEventBus, "Toma");
-        Publisher anca = new Publisher(newsEventBus, "Anca");
+        Publisher  StephenCollinson = new Publisher(newsEventBus, "Stephen Collinson");
+        Publisher JenniferSteinhauer = new Publisher(newsEventBus, "Jennifer Steinhauer");
+        Publisher ChandlerThornton = new Publisher(newsEventBus, "Chandler Thornton");
+        Publisher MichelleToh = new Publisher(newsEventBus, "Michelle Toh");
 
-        Viewer edgar = new Viewer("Edgar", domains1, newsEventBus);
-        Viewer tania = new Viewer("Tania", domains2, newsEventBus);
+        Viewer Emily = new Viewer("Emily", domains1, newsEventBus);
+        Viewer Kevin = new Viewer("Kevin", domains2, newsEventBus);
+        Viewer Bob = new Viewer("Bob", domains3, newsEventBus);
 
 
-        News sportNews = toma.createNews("Pandurii TG-Jiu a luat bataie... din nou.", News.NewsType.Sport);
+        News politicsNews = StephenCollinson.createNews("McConnell sets stage for new face-off with Biden after delivering blow to Trump's election fantasy.", News.NewsType.Politics);
+        News sportNews = StephenCollinson.createNews("Can Mick Schumacher emulate his father Michael in Formula One?", News.NewsType.Sport);
+        News socialNews1 = JenniferSteinhauer.createNews("Tom Cruise reportedly scolds 'Mission: Impossible 7' crew members for violating social distancing measures.", News.NewsType.Social);
+        News socialNews2 = ChandlerThornton.createNews("Britney Spears' father speaks out as she requests to remove him as conservator of her estate.", News.NewsType.Social);
+        News financialNews = MichelleToh.createNews("China's luxury market boomed this year, even as global sales shrank.", News.NewsType.Financial);
 
-        News socialNews = anca.createNews("Let's make money.", News.NewsType.Social);
-
-        News culturalNews = anca.createNews("Culture is nice.", News.NewsType.Cultural);
-
-        toma.updateNews(sportNews,"De fapt a castigat ;)");
+        StephenCollinson.updateNews(sportNews,"Mick Schumacher racing as Mick Junior for KSM Racing Team at the German Karting Championship on 5 October 2014, in Genk, Belgium.");
+        StephenCollinson.updateNews(sportNews,"He knows he has his name, he knows he has to manage the pressure, and he's capable of managing the pressure, says Rosin.");
 
     }
 

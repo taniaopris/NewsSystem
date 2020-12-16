@@ -3,9 +3,9 @@ package events.publishNews;
 import events.NewsUpdateEvent;
 import products.News;
 
-public class PublishPolicyNewsEvent extends NewsUpdateEvent {
+public class PublishPoliticsNewsEvent extends NewsUpdateEvent {
 
-    public PublishPolicyNewsEvent(News news) {
+    public PublishPoliticsNewsEvent(News news) {
         super(news);
     }
 }

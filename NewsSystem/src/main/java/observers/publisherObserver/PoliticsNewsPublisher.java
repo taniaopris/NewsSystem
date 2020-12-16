@@ -2,18 +2,18 @@ package observers.publisherObserver;
 
 import com.google.common.eventbus.EventBus;
 import com.google.common.eventbus.Subscribe;
-import events.viewNews.ViewPolicyNewsEvent;
+import events.viewNews.ViewPoliticsNewsEvent;
 import observers.PublisherNewsObserver;
 import products.Publisher;
 
-public class PolicyNewsPublisher extends PublisherNewsObserver {
+public class PoliticsNewsPublisher extends PublisherNewsObserver {
 
-    public PolicyNewsPublisher(EventBus eventBus, Publisher publisher) {
+    public PoliticsNewsPublisher(EventBus eventBus, Publisher publisher) {
         super(eventBus,publisher);
     }
 
     @Subscribe
-    private void newsViewEvent(ViewPolicyNewsEvent event) {
+    private void newsViewEvent(ViewPoliticsNewsEvent event) {
         this.showNewsStatistics(event.getNewsEvent());
     }
 }

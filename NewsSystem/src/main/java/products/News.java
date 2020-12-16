@@ -13,7 +13,7 @@ public class News {
     public enum NewsType {
         Cultural,
         Financial,
-        Policy,
+        Politics,
         Social,
         Sport
     }

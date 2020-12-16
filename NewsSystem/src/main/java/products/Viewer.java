@@ -24,7 +24,7 @@ public class Viewer {
         switch (domain){
             case Cultural: domainsOfInterest.add(new CulturalNewsSubscriber(newsEventBus, this.name)); break;
             case Financial: domainsOfInterest.add(new FinancialNewsSubscriber(newsEventBus, this.name)); break;
-            case Policy: domainsOfInterest.add(new PolicyNewsSubscriber(newsEventBus, this.name)); break;
+            case Politics: domainsOfInterest.add(new PoliticsNewsSubscriber(newsEventBus, this.name)); break;
             case Social: domainsOfInterest.add(new SocialNewsSubscriber(newsEventBus, this.name)); break;
             case Sport: domainsOfInterest.add(new SportNewsSubscriber(newsEventBus, this.name)); break;
         }

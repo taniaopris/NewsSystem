@@ -39,8 +39,8 @@ public class Publisher {
             case Financial:
                 event = new PublishFinancialNewsEvent(news);
                 break;
-            case Policy:
-                event = new PublishPolicyNewsEvent(news);
+            case Politics:
+                event = new PublishPoliticsNewsEvent(news);
                 break;
             case Social:
                 event = new PublishSocialNewsEvent(news);
@@ -60,7 +60,7 @@ public class Publisher {
         switch (domain){
             case Cultural: new CulturalNewsPublisher(newsEventBus, this); break;
             case Financial: new FinancialNewsPublisher(newsEventBus, this); break;
-            case Policy: new PolicyNewsPublisher(newsEventBus, this); break;
+            case Politics: new PoliticsNewsPublisher(newsEventBus, this); break;
             case Social: new SocialNewsPublisher(newsEventBus, this); break;
             case Sport: new SportNewsPublisher(newsEventBus, this); break;
         }
