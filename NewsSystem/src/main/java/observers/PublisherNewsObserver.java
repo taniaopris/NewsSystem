@@ -17,7 +17,7 @@ public class PublisherNewsObserver{
 
     protected void showNewsStatistics(News news) {
         if (news.getPublisher().getPublisherName().equals(publisher.getPublisherName())) {
-            System.out.println("The news " + news.getInformation() + " published by " +  publisher.getPublisherName() + " it was viewed " + news.getNoOfViews() + " time(s).\n");
+            System.out.println("The news " + news.getInformation() + " published by " +  publisher.getPublisherName() + " was viewed " + news.getNoOfViews() + " time(s).\n");
         }
     }
 }
